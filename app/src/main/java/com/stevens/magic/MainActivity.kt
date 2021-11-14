@@ -1,7 +1,8 @@
-package com.example.magic
+package com.stevens.magic
 
 import android.os.Bundle
 import androidx.appcompat.app.AppCompatActivity
+import com.example.magic.R
 
 class MainActivity : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
