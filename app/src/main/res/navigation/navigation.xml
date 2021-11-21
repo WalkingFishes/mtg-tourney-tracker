@@ -13,10 +13,26 @@
         <action
             android:id="@+id/action_titleFragment_to_tournamentsFragment"
             app:destination="@id/tournamentsFragment" />
+        <action
+            android:id="@+id/action_titleFragment_to_playersFragment"
+            app:destination="@id/playersFragment" />
+        <action
+            android:id="@+id/action_titleFragment_to_toolsFragment"
+            app:destination="@id/toolsFragment" />
     </fragment>
     <fragment
         android:id="@+id/tournamentsFragment"
         android:name="com.stevens.magic.TournamentsFragment"
         android:label="fragment_tournaments"
         tools:layout="@layout/fragment_tournaments" />
+    <fragment
+        android:id="@+id/playersFragment"
+        android:name="com.example.magic.PlayersFragment"
+        android:label="fragment_players"
+        tools:layout="@layout/fragment_players" />
+    <fragment
+        android:id="@+id/toolsFragment"
+        android:name="com.example.magic.ToolsFragment"
+        android:label="fragment_tools"
+        tools:layout="@layout/fragment_tools" />
 </navigation>

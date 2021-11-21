@@ -24,11 +24,17 @@ class TitleFragment : Fragment() {
     override fun onCreateView(
         inflater: LayoutInflater, container: ViewGroup?,
         savedInstanceState: Bundle?
-    ): View? {
+    ): View {
         // Inflate the layout for this fragment
         val binding: FragmentTitleBinding = DataBindingUtil.inflate(inflater, R.layout.fragment_title, container, false)
         binding.tournamentsButton.setOnClickListener(
             Navigation.createNavigateOnClickListener(R.id.action_titleFragment_to_tournamentsFragment)
+        )
+        binding.playersButton.setOnClickListener(
+            Navigation.createNavigateOnClickListener(R.id.action_titleFragment_to_playersFragment)
+        )
+        binding.toolsButton.setOnClickListener(
+            Navigation.createNavigateOnClickListener(R.id.action_titleFragment_to_toolsFragment)
         )
         return binding.root
     }
@@ -40,7 +46,7 @@ class TitleFragment : Fragment() {
          *
          */
         @JvmStatic
-        fun newInstance(param1: String, param2: String) =
+        fun newInstance() =
             TitleFragment().apply {
 
             }
