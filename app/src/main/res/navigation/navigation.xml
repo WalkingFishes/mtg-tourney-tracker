@@ -27,12 +27,12 @@
         tools:layout="@layout/fragment_tournaments" />
     <fragment
         android:id="@+id/playersFragment"
-        android:name="com.example.magic.PlayersFragment"
+        android:name="com.stevens.magic.PlayersFragment"
         android:label="fragment_players"
         tools:layout="@layout/fragment_players" />
     <fragment
         android:id="@+id/toolsFragment"
-        android:name="com.example.magic.ToolsFragment"
+        android:name="com.stevens.magic.ToolsFragment"
         android:label="fragment_tools"
         tools:layout="@layout/fragment_tools" />
 </navigation>
