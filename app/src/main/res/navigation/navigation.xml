@@ -12,6 +12,8 @@
         tools:layout="@layout/fragment_title" >
         <action
             android:id="@+id/action_titleFragment_to_tournamentsFragment"
+            app:enterAnim="@anim/slide_in"
+            app:exitAnim="@anim/slide_out"
             app:destination="@id/tournamentsFragment" />
         <action
             android:id="@+id/action_titleFragment_to_playersFragment"
